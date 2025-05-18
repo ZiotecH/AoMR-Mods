@@ -14,3 +14,4 @@ xs.vsix
 !AoMR.code-workspace
 !aomr_vars.ps1
 !.vs_code/**
+!aomr.ps1
