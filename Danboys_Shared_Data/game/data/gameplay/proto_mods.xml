@@ -9,7 +9,7 @@
     <unit name="Hoplite" mergeMode='add'>
         <unittype mergeMode='add'>AbstractSpearUser</unittype>
     </unit>
-    <unit name="Spearman mergeMode='add'">
+    <unit name="Spearman" mergeMode='add'>
         <unittype mergeMode='add'>AbstractSpearUser</unittype>
     </unit>
     <unit name="Katapeltes" mergeMode='add'>
