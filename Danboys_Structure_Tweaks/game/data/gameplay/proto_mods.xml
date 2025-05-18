@@ -46,6 +46,8 @@
         <flag mergeMode='remove'>DoNotAllowAlliedGarrison</flag>
     </unit>
     <unit name="PlentyVault">
+        <initialhitpoints mergeMode='replace'>3500.0000</initialhitpoints>
+        <maxhitpoints mergeMode='replace'>3500.0000</maxhitpoints>
         <los mergeMode='replace'>1.0000</los>
         <flag mergeMode='remove'>NotDeleteable</flag>
         <protoaction mergeMode='replace'>
