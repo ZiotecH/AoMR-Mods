@@ -50,11 +50,10 @@
         <maxhitpoints mergeMode='replace'>3500.0000</maxhitpoints>
         <los mergeMode='replace'>1.0000</los>
         <flag mergeMode='remove'>NotDeleteable</flag>
-        <protoaction mergeMode='replace'>
-            <name mergeMode='replace'>AutoConvert</name>
-            <maxrange mergeMode='replace'>4</maxrange>
-            <cannotbeconvertedbyallies mergeMode='remove'/>
-            <modifyabstracttype mergeMode='replace'>LogicalTypeBuildingThatConvertsConvertibles</modifyabstracttype>
+        <protoaction>
+            <name>AutoConvert</name>
+            <maxrange mergeMode='replace'>10</maxrange>
+            <cannotbeconvertedbyallies mergeMode='replace'>0</cannotbeconvertedbyallies>
         </protoaction>
         <protoaction mergeMode='replace'>
             <name mergeMode='replace'>AutoGather</name>
