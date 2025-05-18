@@ -1,0 +1,3 @@
+<placementrules>
+  <distanceatleastfromtype mergeMode='remove' player="any" foundation="any" distance="3" errorstringid="STR_ERROR_PLACEMENT_WALL">GoldResource</distanceatleastfromtype>
+</placementrules>

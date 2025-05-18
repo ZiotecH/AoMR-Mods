@@ -9,6 +9,7 @@ xs.vsix
 
 #UNignore relevant items
 !Danboys_**
+!Danboys_**/**
 !.gitignore
 !AoMR.code-workspace
 !aomr_vars.ps1

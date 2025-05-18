@@ -1,0 +1,19 @@
+<techtree version="6">
+    <tech name="DB_Unit_Modifications">
+        <status>ACTIVE</status>
+        <flag>HideAllNotifications</flag>
+        <flag>IgnoreForPreloading</flag>
+        <researchpoints>0.0000</researchpoints>
+        <effects>
+            <!-- Why is it reversed? No idea. -->
+            <!--
+            <effect type="Data" action="HandAttack" amount="-0.50" subtype="Damagebonus" unittype="AbstractSiegeWeapon" relativity="Absolute">
+                <target type="ProtoUnit">Hero</target>
+            </effect>
+            -->
+            <effect type="Data" action="HandAttack" amount="-0.50" subtype="Damagebonus" unittype="AbstractSiegeWeapon" relativity="Absolute">
+                <target type="ProtoUnit">AbstractInfantry</target>
+            </effect>
+        </effects>
+    </tech>
+</techtree>

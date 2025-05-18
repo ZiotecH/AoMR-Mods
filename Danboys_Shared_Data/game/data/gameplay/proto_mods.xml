@@ -1,0 +1,58 @@
+<proto>
+    <!-- Add AbstractSpearUser -->
+    <unit name="Atalanta" mergeMode='add'>
+        <unittype mergeMode='add'>AbstractSpearUser</unittype>
+    </unit>
+    <unit name="Hirdman" mergeMode='add'>
+        <unittype mergeMode='add'>AbstractSpearUser</unittype>
+    </unit>
+    <unit name="Hoplite" mergeMode='add'>
+        <unittype mergeMode='add'>AbstractSpearUser</unittype>
+    </unit>
+    <unit name="Spearman mergeMode='add'">
+        <unittype mergeMode='add'>AbstractSpearUser</unittype>
+    </unit>
+    <unit name="Katapeltes" mergeMode='add'>
+        <unittype mergeMode='add'>AbstractSpearUser</unittype>
+    </unit>
+    <unit name="KatapeltesHero" mergeMode='add'>
+        <unittype mergeMode='add'>AbstractSpearUser</unittype>
+    </unit>
+    <unit name="GeHalberdier" mergeMode='add'>
+        <unittype mergeMode='add'>AbstractSpearUser</unittype>
+    </unit>
+    <unit name="Militia" mergeMode='add'>
+        <unittype mergeMode='add'>AbstractSpearUser</unittype>
+    </unit>
+    <unit name="Hoplite" mergeMode='add'>
+        <unittype mergeMode='add'>AbstractSpearUser</unittype>
+    </unit>
+    <unit name="Bellerophon" mergeMode='add'>
+        <unittype mergeMode='add'>AbstractSpearUser</unittype>
+    </unit>
+    <unit name="Ajax" mergeMode='add'>
+        <unittype mergeMode='add'>AbstractSpearUser</unittype>
+    </unit>
+    <unit name="AjaxSPC" mergeMode='add'>
+        <unittype mergeMode='add'>AbstractSpearUser</unittype>
+    </unit>
+    <unit name="AjaxOlder" mergeMode='add'>
+        <unittype mergeMode='add'>AbstractSpearUser</unittype>
+    </unit>
+    <unit name="Arkantos" mergeMode='add'>
+        <unittype mergeMode='add'>AbstractSpearUser</unittype>
+    </unit>
+    <unit name="ArkantosUber" mergeMode='add'>
+        <unittype mergeMode='add'>AbstractSpearUser</unittype>
+    </unit>
+    <unit name="ArkantosGod" mergeMode='add'>
+        <unittype mergeMode='add'>AbstractSpearUser</unittype>
+    </unit>
+    <unit name="Reginleif" mergeMode='add'>
+        <unittype mergeMode='add'>AbstractSpearUser</unittype>
+    </unit>
+    <unit name="Gargarensis" mergeMode='add'>
+        <unittype mergeMode='add'>AbstractSpearUser</unittype>
+    </unit>
+    <!-- END -->
+</proto>

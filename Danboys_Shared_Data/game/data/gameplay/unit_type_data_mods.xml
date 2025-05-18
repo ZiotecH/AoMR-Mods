@@ -1,0 +1,12 @@
+<unittypedata mergeMode='add'>
+    <unittypeentry mergeMode='add'>
+        <unittype>AbstractAntiCav</unittype>
+        <icon>resources/shared/hud/unit_types/unit_type_infantry.png</icon>
+        <displaynameid>STR_HUD_UNIT_TYPE_INFANTRY</displaynameid>
+    </unittypeentry>
+    <unittypeentry mergeMode='add'>
+        <unittype>AbstractSpearUnit</unittype>
+        <icon>resources/shared/hud/unit_types/unit_type_infantry.png</icon>
+        <displaynameid>STR_HUD_UNIT_TYPE_INFANTRY</displaynameid>
+    </unittypeentry>
+</unittypedata>

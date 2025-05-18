@@ -1,0 +1,366 @@
+<proto>
+    <unit name="Gastraphetoros">
+        <los mergeMode='replace'>18.000</los>
+        <armor mergeMode='replace' type="crush" value="0.85"/>
+        <protoaction>
+            <name>RangedAttack</name>
+            <damage         mergeMode='replace' type="Pierce">4.000000</damage>
+            <damage         mergeMode='add'     type="Crush">8.000000</damage>
+            <damagebonus    mergeMode='replace' type="Building">1.000000</damagebonus>
+            <damagebonus    mergeMode='add' type="AbstractFortress">2.000000</damagebonus>
+            <damagebonus    mergeMode='add' type="AbstractTower">2.000000</damagebonus>
+            <damagebonus    mergeMode='add' type="AbstractWall">2.000000</damagebonus>
+            <damagebonus    mergeMode='add' type="Unit">0.500000</damagebonus>
+        </protoaction>
+    </unit>
+    <unit name="Pharaoh">
+        <train mergeMode='add' row="0" column="5">Obelisk</train>
+        <protoaction mergeMode='add'>
+            <name>Build</name>
+            <rate type="Obelisk">1.500000</rate>
+        </protoaction>
+    </unit>
+    <unit name="PharaohNewKingdom">
+        <train mergeMode='add' row="0" column="5">Obelisk</train>
+        <protoaction mergeMode='add'>
+            <name>Build</name>
+            <rate type="Obelisk">1.500000</rate>
+        </protoaction>
+    </unit>
+    <unit name="SonOfOsiris">
+        <train mergeMode='add' row="0" column="5">Obelisk</train>
+        <unittype mergeMode='add'>LogicalTypeHealed</unittype>
+        <flag mergeMode='remove'>ExcludeFromMoveAllMilitary</flag>
+        <protoaction mergeMode='add'>
+            <name>Build</name>
+            <rate type="Obelisk">2.000000</rate>
+        </protoaction>
+    </unit>
+    <unit name="OdysseusSPC">
+        <protoaction>
+            <name>RangedAttack</name>
+            <damagebonus mergeMode='add' type="AbstractInfantry">2.500000</damagebonus>
+        </protoaction>
+        <protoaction>
+            <name>ChargedRangedAttack</name>
+            <damagebonus mergeMode='add' type="AbstractInfantry">2.500000</damagebonus>
+        </protoaction>
+    </unit>
+    <unit name="AjaxSPC">
+        <protoaction>
+            <name>HandAttack</name>
+            <damagebonus mergeMode='add' type="AbstractCavalry">2.500000</damagebonus>
+            <damagebonus mergeMode='add' type="AbstractSiegeWeapon">1.750000</damagebonus>
+        </protoaction>
+        <protoaction>
+            <name>Gore</name>
+            <damage mergeMode='replace' type="Hack">187.500000</damage>
+            <damage mergeMode='add' type="Divine">62.50000</damage>
+            <damagebonus mergeMode='add' type="AbstractCavalry">2.500000</damagebonus>
+            <damagebonus mergeMode='add' type="AbstractSiegeWeapon">1.750000</damagebonus>
+        </protoaction>
+    </unit>
+    <unit name="AjaxOlder">
+        <protoaction>
+            <name>HandAttack</name>
+            <damagebonus mergeMode='add' type="AbstractCavalry">2.500000</damagebonus>
+            <damagebonus mergeMode='add' type="AbstractSiegeWeapon">1.750000</damagebonus>
+        </protoaction>
+        <protoaction>
+            <name>Gore</name>
+            <damage mergeMode='replace' type="Hack">40.000000</damage>
+            <damage mergeMode='add' type="Divine">20.00000</damage>
+            <damagebonus mergeMode='add' type="AbstractCavalry">2.500000</damagebonus>
+            <damagebonus mergeMode='add' type="AbstractSiegeWeapon">1.750000</damagebonus>
+        </protoaction>
+    </unit>
+    <unit name="ChironSPC">
+        <maxvelocity mergeMode='replace'>6.5</maxvelocity>
+        <los mergeMode='replace'>18.5000</los>
+        <protoaction>
+            <name>RangedAttack</name>
+            <damage mergeMode='replace' type="Pierce">14.000000</damage>
+            <damage mergeMode='add' type="Divine">1.000000</damage>
+            <damagebonus mergeMode='add' type="AbstractInfantry">2.500000</damagebonus>
+            <maxrange mergeMode='replace'>18.000000</maxrange>
+        </protoaction>
+        <protoaction>
+            <name>ChargedRangedAttack</name>
+            <damage mergeMode='replace' type="Pierce">37.000000</damage>
+            <damage mergeMode='add' type="Divine">3.000000</damage>
+            <damagebonus mergeMode='add' type="AbstractInfantry">2.500000</damagebonus>
+            <maxrange mergeMode='replace'>18.000000</maxrange>
+        </protoaction>
+    </unit>
+    <unit name="Arkantos">
+        <protoaction>
+            <name>HandAttack</name>
+            <damagebonus mergeMode='add' type="AbstractCavalry">2.500000</damagebonus>
+            <damagebonus mergeMode='add' type="AbstractSiegeWeapon">1.750000</damagebonus>
+        </protoaction>
+    </unit>
+    <unit name="ArkantosUber">
+        <protoaction>
+            <name>HandAttack</name>
+            <damagebonus mergeMode='add' type="AbstractCavalry">2.500000</damagebonus>
+            <damagebonus mergeMode='add' type="AbstractSiegeWeapon">1.750000</damagebonus>
+        </protoaction>
+        <protoaction>
+            <name>BuckAttack</name>
+            <damagebonus mergeMode='add' type="AbstractCavalry">2.500000</damagebonus>
+            <damagebonus mergeMode='add' type="AbstractSiegeWeapon">1.750000</damagebonus>
+        </protoaction>
+    </unit>
+    <unit name="ArkantosGod">
+        <protoaction>
+            <name>HandAttack</name>
+            <damagebonus mergeMode='add' type="AbstractCavalry">2.500000</damagebonus>
+            <damagebonus mergeMode='add' type="AbstractSiegeWeapon">1.750000</damagebonus>
+        </protoaction>
+        <protoaction>
+            <name>BuckAttack</name>
+            <damagebonus mergeMode='add' type="AbstractCavalry">2.500000</damagebonus>
+            <damagebonus mergeMode='add' type="AbstractSiegeWeapon">1.750000</damagebonus>
+        </protoaction>
+    </unit>
+    <unit name="Amanra">
+        <armor mergeMode='replace' type="Pierce" value="0.85"/>
+        <protoaction>
+            <name>HandAttack</name>
+            <damage mergeMode='replace' type="Hack">12.000000</damage>
+            <damagebonus mergeMode='add' type="AbstractArcher">2.500000</damagebonus>
+            <damagebonus mergeMode='add' type="AbstractSiegeWeapon">1.750000</damagebonus>
+        </protoaction>
+        <protoaction>
+            <name>JumpAttack</name>
+            <damagebonus mergeMode='add' type="AbstractArcher">2.500000</damagebonus>
+            <damagebonus mergeMode='add' type="AbstractSiegeWeapon">1.750000</damagebonus>
+        </protoaction>
+    </unit>
+    <unit name="AmanraOlder">
+        <armor mergeMode='replace' type="Pierce" value="0.85"/>
+        <protoaction>
+            <name>HandAttack</name>
+            <damage mergeMode='replace' type="Hack">12.000000</damage>
+            <damagebonus mergeMode='add' type="AbstractArcher">2.500000</damagebonus>
+            <damagebonus mergeMode='add' type="AbstractSiegeWeapon">1.750000</damagebonus>
+        </protoaction>
+        <protoaction>
+            <name>JumpAttack</name>
+            <damagebonus mergeMode='add' type="AbstractArcher">2.500000</damagebonus>
+            <damagebonus mergeMode='add' type="AbstractSiegeWeapon">1.750000</damagebonus>
+        </protoaction>
+    </unit>
+    <unit name="Brokk">
+        <train mergeMode='add' row="0" column="4">Temple</train>
+        <train mergeMode='add' row="0" column="5">Dock</train>
+        <train mergeMode='add' row="1" column="1">Longhouse</train>
+        <train mergeMode='add' row="1" column="2">GreatHall</train>
+        <train mergeMode='add' row="1" column="4">Market</train>
+        <train mergeMode='add' row="1" column="5">Armory</train>
+        <train mergeMode='add' row="1" column="5">DwarvenArmory</train>
+        <train mergeMode='add' row="2" column="0">TownCenter</train>
+        <train mergeMode='add' row="255" column="0">VillageCenter</train>
+        <train mergeMode='add' row="2" column="1">WallConnector</train>
+        <train mergeMode='add' row="255" column="255">WallShort</train>
+        <train mergeMode='add' row="255" column="255">WallMedium</train>
+        <train mergeMode='add' row="255" column="255">WallLong</train>
+        <train mergeMode='add' row="2" column="2">SentryTower</train>
+        <train mergeMode='add' row="2" column="3">HillFort</train>
+        <train mergeMode='add' row="2" column="5">Wonder</train>
+        <carrycapacity mergeMode='replace' resourcetype="Gold">50.0000</carrycapacity>
+        <protoaction>
+            <name>ChopAttack</name>
+            <damage mergeMode='remove' type="Hack">16.000000</damage>
+            <damage mergeMode='add' type="Divine">16.000000</damage>
+        </protoaction>
+        <protoaction>
+            <name>RangedAttack</name>
+            <damagebonus mergeMode='add' type="MythUnit">5.000000</damagebonus>
+        </protoaction>
+        <protoaction>
+            <name>HandAttack</name>
+            <damage mergeMode='replace' type="Hack">8.000000</damage>
+            <damage mergeMode='add' type="Crush">2.00</damage>
+            <damagebonus mergeMode='replace' type="MythUnit">2.500000</damagebonus>
+            <damagebonus mergeMode='add' type="AbstractTower">2.50</damagebonus>
+            <damagebonus mergeMode='add' type="AbstractWall">1.50</damagebonus>
+        </protoaction>
+        <protoaction>
+            <name>Gather</name>
+            <dropsitegathering>1</dropsitegathering>
+            <rate mergeMode='replace' type="WoodResource">1.05000</rate>
+            <rate mergeMode='replace' type="GoldResource">1.500000</rate>
+        </protoaction>
+        <protoaction>
+            <name>Build</name>
+            <rate mergeMode='replace' type="House">1.400000</rate>
+            <rate mergeMode='replace' type="OxCartBuilding">1.400000</rate>
+            <rate mergeMode='add' type="Building">0.850000</rate>
+        </protoaction>
+        <protoaction>
+            <name>Repair</name>
+            <rate mergeMode='remove' type="House">0.5000</rate>
+            <rate mergeMode='add' type="Building">0.5000</rate>
+        </protoaction>
+    </unit>
+    <unit name="Eitri">
+        <train mergeMode='add' row="0" column="4">Temple</train>
+        <train mergeMode='add' row="0" column="5">Dock</train>
+        <train mergeMode='add' row="1" column="1">Longhouse</train>
+        <train mergeMode='add' row="1" column="2">GreatHall</train>
+        <train mergeMode='add' row="1" column="4">Market</train>
+        <train mergeMode='add' row="1" column="5">Armory</train>
+        <train mergeMode='add' row="1" column="5">DwarvenArmory</train>
+        <train mergeMode='add' row="2" column="0">TownCenter</train>
+        <train mergeMode='add' row="255" column="0">VillageCenter</train>
+        <train mergeMode='add' row="2" column="1">WallConnector</train>
+        <train mergeMode='add' row="255" column="255">WallShort</train>
+        <train mergeMode='add' row="255" column="255">WallMedium</train>
+        <train mergeMode='add' row="255" column="255">WallLong</train>
+        <train mergeMode='add' row="2" column="2">SentryTower</train>
+        <train mergeMode='add' row="2" column="3">HillFort</train>
+        <train mergeMode='add' row="2" column="5">Wonder</train>
+        <train mergeMode='add'>TitanGate</train>
+        <carrycapacity mergeMode='replace' resourcetype="Gold">50.0000</carrycapacity>
+        <protoaction>
+            <name>ChopAttack</name>
+            <damage mergeMode='remove' type="Hack">16.000000</damage>
+            <damage mergeMode='add' type="Divine">16.000000</damage>
+        </protoaction>
+        <protoaction>
+            <name>RangedAttack</name>
+            <damagebonus mergeMode='add' type="MythUnit">5.00000</damagebonus>
+        </protoaction>
+        <protoaction>
+            <name>HandAttack</name>
+            <damage mergeMode='replace' type="Hack">8.000000</damage>
+            <damage mergeMode='add' type="Crush">2.00</damage>
+            <damagebonus mergeMode='replace' type="MythUnit">2.500000</damagebonus>
+            <damagebonus mergeMode='add' type="AbstractTower">2.50</damagebonus>
+            <damagebonus mergeMode='add' type="AbstractWall">1.50</damagebonus>
+        </protoaction>
+        <protoaction>
+            <name>Gather</name>
+            <dropsitegathering>1</dropsitegathering>
+            <rate mergeMode='replace' type="WoodResource">1.0500</rate>
+            <rate mergeMode='replace' type="GoldResource">1.500000</rate>
+        </protoaction>
+        <protoaction>
+            <name>Build</name>
+            <rate mergeMode='replace' type="House">1.400000</rate>
+            <rate mergeMode='replace' type="OxCartBuilding">1.400000</rate>
+            <rate mergeMode='add' type="Building">0.850000</rate>
+        </protoaction>
+        <protoaction>
+            <name>Repair</name>
+            <rate mergeMode='remove' type="House">0.5000</rate>
+            <rate mergeMode='add' type="Building">0.5000</rate>
+        </protoaction>
+    </unit>
+    <unit name="Reginleif">
+        <protoaction>
+            <name>RangedAttack</name>
+            <damage mergeMode='replace' type="Pierce">16.000000</damage>
+            <damage mergeMode='add' type="Hack">4.000000</damage>
+            <damagebonus mergeMode='add' type="AbstractInfantry">2.500000</damagebonus>
+            <damagebonus mergeMode='add' type="AbstractArcher">1.15</damagebonus>
+        </protoaction>
+        <protoaction>
+            <name>Heal</name>
+            <rate mergeMode='add' type="MajorHero">33.00000</rate>
+        </protoaction>
+    </unit>
+    <unit name="ThrowingAxeman">
+        <protoaction>
+            <name>RangedAttack</name>
+            <damagebonus mergeMode='add' type="Hero">0.67</damagebonus>
+        </protoaction>
+    </unit>
+    <unit name="Ballista">
+        <protoaction>
+            <name>RangedAttack</name>
+            <damagebonus mergeMode='add' type="AbstractSiegeWeapon">1.33</damagebonus>
+        </protoaction>
+    </unit>
+    <unit name="Hersir">
+        <protoaction>
+            <name>HandAttack</name>
+            <damage mergeMode='add' type="Crush">2.00</damage>
+            <damagebonus mergeMode='add' type="AbstractSiegeWeapon">1.33</damagebonus>
+            <damagebonus mergeMode='add' type="AbstractArcher">1.33</damagebonus>
+        </protoaction>
+        <protoaction>
+            <name>Build</name>
+            <rate mergeMode='replace' type="Building">1.250000</rate>
+        </protoaction>
+        <protoaction>
+            <name>Repair</name>
+            <rate mergeMode='replace' type="AbstractWall">0.3750</rate>
+            <rate mergeMode='replace' type="Building">0.7500</rate>
+        </protoaction>
+    </unit>
+    <unit name="Godi">
+        <protoaction>
+            <name>RangedAttack</name>
+            <damage mergeMode='replace' type="Pierce">8.750000</damage>
+            <damagebonus mergeMode='add' type="AbstractInfantry">1.33</damagebonus>
+        </protoaction>
+        <protoaction>
+            <name>Build</name>
+            <rate mergeMode='replace' type="Building">1.250000</rate>
+        </protoaction>
+        <protoaction>
+            <name>Repair</name>
+            <rate mergeMode='replace' type="AbstractWall">0.3750</rate>
+            <rate mergeMode='replace' type="Building">0.7500</rate>
+        </protoaction>
+    </unit>
+    <unit name="TitanCerberus">
+        <flag mergeMode='add'>LogicalTypeHealed</flag>
+    </unit>
+    <unit name="TitanBird">
+        <flag mergeMode='add'>LogicalTypeHealed</flag>
+    </unit>
+    <unit name="TitanYmir">
+        <flag mergeMode='add'>LogicalTypeHealed</flag>
+    </unit>
+    <unit name="TitanAtlantean">
+        <flag mergeMode='add'>LogicalTypeHealed</flag>
+    </unit>
+    <unit name="TitanKronos">
+        <flag mergeMode='add'>LogicalTypeHealed</flag>
+    </unit>
+    <unit name="TitanGaia">
+        <flag mergeMode='add'>LogicalTypeHealed</flag>
+    </unit>
+    <unit name="TitanPrometheus">
+        <flag mergeMode='add'>LogicalTypeHealed</flag>
+    </unit>
+    <unit name="TitanXingTian">
+        <flag mergeMode='add'>LogicalTypeHealed</flag>
+    </unit>
+    <unit name="Raven">
+        <initialhitpoints mergeMode='replace'>50.0000</initialhitpoints>
+        <maxhitpoints mergeMode='replace'>50.0000</maxhitpoints>
+        <maxvelocity mergeMode='replace'>7.00</maxvelocity>
+        <los>12.00</los>
+    </unit>
+    <!--
+    <unit mergeMode='add' name="AbstractTitan">
+        <unittype mergeMode='add'>LogicalTypeHealed</unittype>
+    </unit>
+    <unit mergemode='add' name="Hero">
+        <protoaction>
+            <name>HandAttack</name>
+            <damagebonus mergeMode='add' type="AbstractSiegeWeapon">1.5</damagebonus>
+        </protoaction>
+    </unit>
+    <unit mergeMode='add' name="AbstractInfantry">
+        <protoaction>
+            <name>HandAttack</name>
+            <damagebonus mergeMode='add' type="AbstractSiegeWeapon">1.5</damagebonus>
+        </protoaction>
+    </unit>
+    -->
+</proto>

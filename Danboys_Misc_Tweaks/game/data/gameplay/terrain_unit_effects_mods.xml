@@ -1,0 +1,6 @@
+<terrainuniteffects>
+  <!-- <terrainuniteffect mergeMode='replace' name="GaiaCreepHealEffect" active="">
+    <effect name="GaiaCreepHealAll" class="unitModify" type="healRate" amount="1.0"></effect>
+    <creep target="self">GaiaCreep</creep>
+  </terrainuniteffect> -->
+</terrainuniteffects>

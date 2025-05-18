@@ -1,0 +1,7 @@
+<unitaitypes mergeMode='add'>
+  <unitaitype type="AbstractSpearUnit">
+    <attack>LogicalTypeHandUnitsAttack</attack>
+    <autoattack>LogicalTypeHandUnitsAutoAttack</autoattack>
+    <respondtoattack>LogicalTypeHandUnitsAttack</respondtoattack>
+  </unitaitype>
+</unitaitypes>

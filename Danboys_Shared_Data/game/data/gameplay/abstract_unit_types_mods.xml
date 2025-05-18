@@ -1,0 +1,4 @@
+<abstractunittypes mergeMode='add'>
+  <abstractunittype mergeMode='add'>AbstractAntiCav</abstractunittype>
+  <abstractunittype mergeMode='add'>AbstractSpearUnit</abstractunittype>
+</abstractunittypes>

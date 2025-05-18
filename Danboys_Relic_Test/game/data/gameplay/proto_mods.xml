@@ -1,0 +1,12 @@
+<proto>
+    <unit name="Temple">
+        <maxcontained mergeMode='replace'>2500</maxcontained>
+        <flag mergeMode='add'>HideGarrisonCapacity</flag>
+        <protoaction mergeMode='add'>
+            <name mergeMode='add'>AutoGather</name>
+            <type mergeMode='add'>AutoGather</type>
+            <persistent mergeMode='add'>1</persistent>
+            <active mergeMode='add'>0</active>
+        </protoaction>
+    </unit>
+</proto>

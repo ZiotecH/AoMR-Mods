@@ -1,0 +1,5 @@
+<abilities>
+    <temple mergeMode='add'>
+        <ability>PassiveLush<tech>ArchaicAgeGaia</tech><alwaysdisabledingrid>1</alwaysdisabledingrid></ability>
+    </temple>
+</abilities>

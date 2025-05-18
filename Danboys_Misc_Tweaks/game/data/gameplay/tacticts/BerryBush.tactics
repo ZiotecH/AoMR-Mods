@@ -1,0 +1,21 @@
+<!-- <tactics>
+  <action>
+    <name stringid="STR_ACTION_AUTO_GATHER">AutoGatherFood</name>
+    <type>AutoGather</type>
+    <rate type="Food">0.250000</rate>
+    <persistent>1</persistent>
+    <addresourcestoinventory>1</addresourcestoinventory>
+    <donotautogatherifgathered>1</donotautogatherifgathered>
+  </action>
+  <tactic>Default<action>AutoGatherFood</action></tactic>
+</tactics>
+-->
+<tactics>
+  <action>
+    <name stringid="STR_ACTION_AUTO_GATHER">AutoGatherFood</name>
+    <type>AutoGather</type>
+    <persistent>1</persistent>
+    <addresourcestoinventory>1</addresourcestoinventory>
+  </action>
+  <tactic>Default<action>AutoGatherFood</action></tactic>
+</tactics>

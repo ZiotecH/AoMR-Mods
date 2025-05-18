@@ -1,0 +1,214 @@
+<proto>
+    <!-- Misc Buildings -->
+    <unit name="HealingSpring">
+        <initialhitpoints mergeMode='replace'>4800.0000</initialhitpoints>
+        <maxhitpoints mergeMode='replace'>4800.0000</maxhitpoints>
+        <unitregen mergeMode='add'>0.2500</unitregen>
+        <buildpoints mergeMode='add'>300</buildpoints>
+        <cost mergeMode='replace' resourcetype="Gold">400.00</cost>
+        <cost mergeMode='replace' resourcetype="Food">0.00</cost>
+        <cost mergeMode='replace' resourcetype="Wood">0.00</cost>
+        <armor mergeMode='replace' type="Hack" value="0.9900"></armor>
+        <armor mergeMode='replace' type="Pierce" value="0.9900"></armor>
+        <armor mergeMode='replace' type="Crush" value="0.0000"></armor>
+        <unittype mergeMode='add'>LogicalTypeHandUnitsAutoAttack</unittype>
+        <unittype mergeMode='add'>LogicalTypeRangedUnitsAutoAttack</unittype>
+        <unittype mergeMode='add'>LogicalTypeVillagersAttack</unittype>
+        <unittype mergeMode='add'>LogicalTypeHandUnitsAttack</unittype>
+        <unittype mergeMode='add'>LogicalTypeRangedUnitsAttack</unittype>
+        <unittype mergeMode='add'>LogicalTypeEarthquakeAttack</unittype>
+        <unittype mergeMode='add'>LogicalTypeAffectedByRestoration</unittype>
+        <unittype mergeMode='add'>LogicalTypeValidMeteorTarget</unittype>
+        <unittype mergeMode='add'>LogicalTypeValidTornadoAttack</unittype>
+        <unittype mergeMode='add'>LogicalTypeBuildingLarge</unittype>
+        <flag mergeMode='remove'>NoHPBar</flag>
+        <flag mergeMode='remove'>Invulnerable</flag>
+        <flag mergeMode='remove'>NotDeleteable</flag>
+        <flag mergeMode='remove'>NotRepairable</flag>
+        <command mergeMode='add' row="3" column="5">Delete</command>
+        <protoaction>
+            <name>AreaHeal</name>
+            <modifyamount mergeMode='replace'>6.25</modifyamount>
+            <rate mergeMode='add' type="MajorHero">12.50000</rate>
+            <rate mergeMode='add' type="AbstractWall">0.05</rate>
+            <rate mergeMode='add' type="AbstractFortress">0.05</rate>
+            <rate mergeMode='add' type="AbstractTower">0.05</rate>
+            <rate mergeMode='add' type="AbstractSiegeWeapon">0.50</rate>
+            <slowhealmultiplier mergeMode='replace'>0.67</slowhealmultiplier>
+        </protoaction>
+    </unit>
+    <unit name="SkyPassage">
+        <initialhitpoints mergeMode='replace'>800.0000</initialhitpoints>
+        <maxhitpoints mergeMode='replace'>800.0000</maxhitpoints>
+        <armor mergeMode='replace' type="Hack" value="0.6700"></armor>
+        <armor mergeMode='replace' type="Pierce" value="0.9500"></armor>
+        <armor mergeMode='replace' type="Crush" value="0.0000"></armor>
+        <flag mergeMode='remove'>DoNotAllowAlliedGarrison</flag>
+    </unit>
+    <unit name="PlentyVault">
+        <los mergeMode='replace'>1.0000</los>
+        <flag mergeMode='remove'>NotDeleteable</flag>
+        <protoaction mergeMode='replace'>
+            <name mergeMode='replace'>AutoConvert</name>
+            <maxrange mergeMode='replace'>4</maxrange>
+            <cannotbeconvertedbyallies mergeMode='remove'/>
+            <modifyabstracttype mergeMode='replace'>LogicalTypeBuildingThatConvertsConvertibles</modifyabstracttype>
+        </protoaction>
+        <protoaction mergeMode='replace'>
+            <name mergeMode='replace'>AutoGather</name>
+            <type mergeMode='replace'>AutoGather</type>
+            <rate mergeMode='replace' type="Food">4.000000</rate>
+            <rate mergeMode='replace' type="Wood">4.000000</rate>
+            <rate mergeMode='replace' type="Gold">4.000000</rate>
+            <rate mergeMode='add' type="Favor">0.250000</rate>
+            <persistent mergeMode='replace'>1</persistent>
+        </protoaction>
+        <command mergeMode='add' row="3" column="5">Delete</command>
+    </unit>
+    <unit name="UnderworldPassage">
+        <los mergeMode='replace'>4.0000</los>
+        <armor mergeMode='replace' type="Hack" value="0.9900"></armor>
+        <armor mergeMode='replace' type="Pierce" value="0.9900"></armor>
+        <armor mergeMode='replace' type="Crush" value="0.1500"></armor>
+        <flag mergeMode='remove'>NotRepairable</flag>
+        <notcontain mergeMode='remove'>TradeUnit</notcontain>
+    </unit>
+    <unit name="Temple">
+        <protoaction mergeMode='replace'>
+            <name>AreaHeal</name>
+            <modifyamount>15</modifyamount>
+            <maxrange>15</maxrange>
+            <slowhealmultiplier>0.50</slowhealmultiplier>
+            <modifytargetlimit>3</modifytargetlimit>
+            <includeally>1</includeally>
+        </protoaction>
+        <protoaction mergeMode='replace'>
+            <name>BlessingAreaHeal</name>
+            <modifyamount>1</modifyamount>
+            <maxrange>15</maxrange>
+            <slowhealmultiplier>0.50</slowhealmultiplier>
+            <modifytargetlimit>5</modifytargetlimit>
+            <includeally>1</includeally>
+        </protoaction>
+    </unit>
+    <!-- Towers -->
+    <unit name="SentryTower">
+        <buildlimit mergeMode='remove'/>
+        <sharedbuildlimitunittypes mergeMode='remove'/>
+        <protoaction mergeMode='replace'>
+            <name>RangedAttack</name>
+            <rof>1.000000</rof>
+            <damage type="Pierce">8.000000</damage>
+            <damagebonus type="Ship">3.000000</damagebonus>
+            <minrange>4.000000</minrange>
+            <maxrange>18.000000</maxrange>
+            <active>0</active>
+            <projectile>ProjectileArrow</projectile>
+            <displayednumberprojectiles>2</displayednumberprojectiles>
+            <autoretarget>1</autoretarget>
+            <canattackground>1</canattackground>
+        </protoaction>
+    </unit>
+    <unit name="MirrorTower">
+        <buildlimit mergeMode='remove'/>
+        <protoaction mergeMode='replace'>
+            <name>BeamAttack</name>
+            <rof>3.000000</rof>
+            <damage type="Pierce">25.000000</damage>
+            <damage type="Divine">10.000000</damage>
+            <damagebonus type="Ship">3.000000</damagebonus>
+            <damagebonus type="MythUnit">1.75</damagebonus>
+            <maxrange>22.000000</maxrange>
+            <projectile>ProjectileMirrorTowerLazer</projectile>
+        </protoaction>
+    </unit>
+    <!-- Walls -->
+    <unit name="WallShort">
+		<initialhitpoints mergeMode='replace'>1200.0000</initialhitpoints>
+		<maxhitpoints mergeMode='replace'>1200.0000</maxhitpoints>
+		<armor mergeMode='replace' type="Hack" value="0.9500"></armor>
+		<armor mergeMode='replace' type="Pierce" value="0.9500"></armor>
+		<armor mergeMode='replace' type="Crush" value="0.1500"></armor>
+    </unit>
+    <unit name="WallMedium">
+		<initialhitpoints mergeMode='replace'>1200.0000</initialhitpoints>
+		<maxhitpoints mergeMode='replace'>1200.0000</maxhitpoints>
+		<armor mergeMode='replace' type="Hack" value="0.9500"></armor>
+		<armor mergeMode='replace' type="Pierce" value="0.9500"></armor>
+		<armor mergeMode='replace' type="Crush" value="0.1500"></armor>
+    </unit>
+    <unit name="WallLong">
+		<initialhitpoints mergeMode='replace'>1200.0000</initialhitpoints>
+		<maxhitpoints mergeMode='replace'>1200.0000</maxhitpoints>
+		<armor mergeMode='replace' type="Hack" value="0.9500"></armor>
+		<armor mergeMode='replace' type="Pierce" value="0.9500"></armor>
+		<armor mergeMode='replace' type="Crush" value="0.1500"></armor>
+    </unit>
+    <unit name="WallConnector">
+		<initialhitpoints mergeMode='replace'>1200.0000</initialhitpoints>
+		<maxhitpoints mergeMode='replace'>1200.0000</maxhitpoints>
+		<armor mergeMode='replace' type="Hack" value="0.9500"></armor>
+		<armor mergeMode='replace' type="Pierce" value="0.9500"></armor>
+		<armor mergeMode='replace' type="Crush" value="0.1500"></armor>
+    </unit>
+    <unit name="WallGate">
+		<initialhitpoints mergeMode='replace'>1200.0000</initialhitpoints>
+		<maxhitpoints mergeMode='replace'>1200.0000</maxhitpoints>
+		<armor mergeMode='replace' type="Hack" value="0.9500"></armor>
+		<armor mergeMode='replace' type="Pierce" value="0.9500"></armor>
+		<armor mergeMode='replace' type="Crush" value="0.1500"></armor>
+    </unit>
+    <!-- Houtu's Wall -->
+    <unit name="EarthWall">
+		<initialhitpoints mergeMode='replace'>50.0000</initialhitpoints>
+		<maxhitpoints mergeMode='replace'>1200.0000</maxhitpoints>
+		<unitregen mergeMode='add'>3.0000</unitregen>
+		<buildpoints mergeMode='replace'>120.0000</buildpoints>
+		<armor mergeMode='replace' type="Hack" value="0.9900"></armor>
+		<armor mergeMode='replace' type="Pierce" value="0.9900"></armor>
+		<armor mergeMode='replace' type="Crush" value="0.1500"></armor>
+		<tech mergeMode='add' row="0" column="0">StoneWall</tech>
+		<tech mergeMode='add' row="0" column="0">FortifiedWall</tech>
+		<tech mergeMode='add' row="0" column="0">CitadelWall</tech>
+		<tech mergeMode='add' row="0" column="0">BronzeWall</tech>
+		<tech mergeMode='add' row="0" column="0">IronWall</tech>
+		<tech mergeMode='add' row="0" column="0">OrichalcumWall</tech>
+		<tech mergeMode='add' row="0" column="0">GreatWall</tech>
+		<tech mergeMode='add' row="1" column="0">AdvancedDefenses</tech>
+    </unit>
+    <!-- Houses -->
+    <unit name="House">
+        <buildlimit mergeMode='remove'/>
+        <sharedbuildlimitunit mergeMode='remove'/>
+        <sharedbuildlimitunittypes mergeMode='remove'/>
+        <unittype mergeMode='remove'>AbstractHouseBuildLimit</unittype>
+        <flag mergeMode='remove'>UseSharedBuildLimit</flag>
+    </unit>
+    <unit name="Manor">
+        <buildlimit mergeMode='remove'/>
+    </unit>
+    <unit name="Tent">
+        <buildlimit mergeMode='remove'/>
+        <sharedbuildlimitunit mergeMode='remove'/>
+        <sharedbuildlimitunittypes mergeMode='remove'/>
+        <unittype mergeMode='remove'>AbstractHouseBuildLimit</unittype>
+        <flag mergeMode='remove'>UseSharedBuildLimit</flag>
+    </unit>
+    <unit name="TentSPC">
+        <buildlimit mergeMode='remove'/>
+        <sharedbuildlimitunit mergeMode='remove'/>
+        <sharedbuildlimitunittypes mergeMode='remove'/>
+        <unittype mergeMode='remove'>AbstractHouseBuildLimit</unittype>
+        <flag mergeMode='remove'>UseSharedBuildLimit</flag>
+    </unit>
+    <!-- Farms -->
+    <unit name="FarmShennong">
+        <protoaction mergeMode='replace'>
+            <name>AreaHeal</name>
+            <modifyamount>1</modifyamount>
+            <maxrange>3.5</maxrange>
+            <slowhealmultiplier>0.50</slowhealmultiplier>
+            <includeally>1</includeally>
+        </protoaction>
+    </unit>
+</proto>
