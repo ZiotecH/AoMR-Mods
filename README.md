@@ -458,11 +458,10 @@ ____
         * Rate(House):  1.00 → 1.40
         * Rate(OxCart): 1.00 → 1.40
 * Reginleif
-    * Add: 
-    * Add: Build (1.25)
+    * <s>Add: Build (1.25)
     * Add: Repair (1.5)
     * Add: Military/Civilian actions
-    * Add: Train - All Buildings
+    * Add: Train - All Buildings </s>
     * RangedAttack
         * Damage(Pierce):       16.00 → 18.00
         * Damage(Hack):         00.00 → 02.00
