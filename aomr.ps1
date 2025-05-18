@@ -1,0 +1,1 @@
+C:/Users/ziote/Documents/PowerShell/aomr.ps1

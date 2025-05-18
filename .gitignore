@@ -1,0 +1,15 @@
+#Ignore ALL items
+data
+Doxygen
+extracted
+Resource_Manager
+tmp
+auto_lines.ps1
+xs.vsix
+
+#UNignore relevant items
+!Danboys_**
+!.gitignore
+!AoMR.code-workspace
+!aomr_vars.ps1
+!.vs_code/**
