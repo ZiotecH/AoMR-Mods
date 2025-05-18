@@ -6,6 +6,7 @@ Resource_Manager
 tmp
 auto_lines.ps1
 xs.vsix
+complete.md
 
 #UNignore relevant items
 !Danboys_**
