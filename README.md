@@ -3,7 +3,7 @@ My AoMR mods
 
 # Installation
 ### On windows:
-Navigate to `C:\users\\[username]\Games\Age of Mythology Retold\\[your-id]\mods\local` and simply place the folders inside.
+Navigate to `C:\users\[username]\Games\Age of Mythology Retold\[your-id]\mods\local` and simply place the folders inside.
 
 ### On Linux:
 Unsure due to issues getting mods to work on linux so far, I'd assume it's something akin to `[your-steam-path]\steamapps\compat\1934680\c\users\steamuser\games\Age of Mythology Retold\[your-id]\mods\local` but I can't really say at this time. Placing the folders inside should work just the same.
