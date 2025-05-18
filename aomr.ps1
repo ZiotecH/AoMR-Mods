@@ -37,11 +37,10 @@ class AoMR {
     }
 
     [void] swap() {
-        if ((Get-Item .).FullName -eq $This.src.FullName) {
-            Set-Location $This.wrk
-        }
-        else {
-            Set-Location $This.src
+        $currentDirectory = (Get-Item .).FullName
+        switch($currentDirectory){
+            ($This.wrk.FullName) { Set-Location $This.src;break;}
+            default {Set-Location $This.wrk;break}
         }
     }
 
