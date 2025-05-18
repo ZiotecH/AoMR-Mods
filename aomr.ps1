@@ -26,19 +26,29 @@ class AoMR {
     [int32]$sid = 1934680
     [System.IO.FileSystemInfo]$src = (Get-Item "C:\Users\ziote\Games\Age of Mythology Retold\76561197982828202\mods\local")
     [System.IO.FileSystemInfo]$wrk = (Get-Item "C:\tmp\modding\AoMR")
+    [System.IO.FileSystemInfo]$callDir = (Get-Item .)
+    [System.IO.FileSystemInfo]$workspace = (Get-Item "$($This.wrk)\AoMR.code-workspace")
 
-
-    [void] Init() {
+    [void] Init(){$This.Init($False)}
+    [void] Init([switch]$NoNewWT) {
         <# Action to perform. You can use $ to reference the current instance of this class #>
-        if ((Get-Item .).FullName -ne $This.wrk.FullName) {
+        if(!$NoNewWT -and ($This.src.FullName,$This.wrk.FullName) -contains $This.callDir.FullName){
+            $NoNewWT = $True
+        }
+        if (!$NoNewWT) {
             Start-Process wt -ArgumentList ("-d C:\tmp\modding\AoMR", "pwsh.exe", "-NoExit", "-NoLogo", "-NoProfileLoadTime", "-Command", ". .\aomr.ps1")
         }
-        code "$($This.wrk)\AoMR.code-workspace"
+        $This.code()
+    }
+
+    [void] code(){$This.code($This.workspace)}
+    [void] code($workspace) {
+        code $workspace
     }
 
     [void] swap() {
-        $currentDirectory = (Get-Item .).FullName
-        switch($currentDirectory){
+        $This.callDir = (Get-Item .)
+        switch ($This.callDir.FullName) {
             ($This.wrk.FullName) { Set-Location $This.src;break;}
             default {Set-Location $This.wrk;break}
         }
