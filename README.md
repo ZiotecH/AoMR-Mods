@@ -1,6 +1,17 @@
 # AoMR-Mods
 My AoMR mods
 
+# Installation
+### On windows:
+Navigate to `C:\users\\[username]\Games\Age of Mythology Retold\\[your-id]\mods\local` and simply place the folders inside.
+
+### On Linux:
+Unsure due to issues getting mods to work on linux so far, I'd assume it's something akin to `[your-steam-path]\steamapps\compat\1934680\c\users\steamuser\games\Age of Mythology Retold\[your-id]\mods\local` but I can't really say at this time. Placing the folders inside should work just the same.
+
+After this you simply start the game, go to the mods manager and enable them.
+Make sure `Shared_Data` is enabled and above any of the others in the load-order/priority.
+____
+
 # Changelog
 
 ## Misc_Tweaks
