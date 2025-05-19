@@ -55,4 +55,10 @@
         <unittype mergeMode='add'>AbstractSpearUser</unittype>
     </unit>
     <!-- END -->
+    <!-- ADDING NEW TYPE OF PIG -->
+    <unit name="Pig">
+        <cost mergeMode='add' resourcetype="Food">25.0000</cost>
+        <trainpoints mergeMode='add'>30.00</trainpoints>
+        <initialresource mergeMode='replace' resourcetype="Food">0.0100</initialresource>
+    </unit>
 </proto>

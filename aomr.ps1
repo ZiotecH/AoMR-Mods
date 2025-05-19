@@ -57,8 +57,10 @@ class AoMR {
     [void] launch() {
         Foreach($Obj in (Get-Item "$($This.wrk)\Danboys_*")){
             if(Test-Path "$($This.src)\$($Obj.Name)"){
+                Write-Host "Deleting $($Obj.name).`t" -NoNewline
                 Remove-Item "$($This.src)\$($Obj.Name)" -Recurse -Force | Out-Null
             }
+            Write-Host "Copying $($Obj.name)."
             Copy-Item $Obj -Destination "$($This.src)\" -Recurse | Out-Null
         }
         explorer.exe "steam://run/$($This.sid)"

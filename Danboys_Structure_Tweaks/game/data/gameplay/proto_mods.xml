@@ -212,4 +212,25 @@
             <includeally>1</includeally>
         </protoaction>
     </unit>
+    <!-- ECO BUILDINGS -->
+    <unit name="Granary">
+        <train mergeMode='add' row="0" column="0">Pig</train>
+        <flag mergeMode='add'>HasGatherPoint</flag>
+        <command mergeMode='add' row="3" column="2">SetGatherPoint</command>
+    </unit>
+    <unit name="OxCart">
+        <train mergeMode='add' row="0" column="0">Pig</train>
+        <flag mergeMode='add'>HasGatherPoint</flag>
+        <command mergeMode='add' row="3" column="2">SetGatherPoint</command>
+    </unit>
+    <unit name="EconomicGuild">
+        <train mergeMode='add' row="0" column="0">Pig</train>
+        <flag mergeMode='add'>HasGatherPoint</flag>
+        <command mergeMode='add' row="3" column="2">SetGatherPoint</command>
+    </unit>
+    <unit name="Silo">
+        <train mergeMode='add' row="0" column="0">Pig</train>
+        <flag mergeMode='add'>HasGatherPoint</flag>
+        <command mergeMode='add' row="3" column="2">SetGatherPoint</command>
+    </unit>
 </proto>

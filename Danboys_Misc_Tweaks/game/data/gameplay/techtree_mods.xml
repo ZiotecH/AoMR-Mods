@@ -1,0 +1,9 @@
+<techtree version="6">
+    <tech name="WonderAgeGeneral">
+        <effects>
+            <effect mergeMode='add' type="Data" amount="1.33" subtype="Resource" resource="Favor" relativity="Percent">
+                <target type="Player"></target>
+            </effect>
+        </effects>
+    </tech>
+</techtree>

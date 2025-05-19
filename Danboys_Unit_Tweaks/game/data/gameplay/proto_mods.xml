@@ -344,7 +344,7 @@
         <initialhitpoints mergeMode='replace'>50.0000</initialhitpoints>
         <maxhitpoints mergeMode='replace'>50.0000</maxhitpoints>
         <maxvelocity mergeMode='replace'>7.00</maxvelocity>
-        <los>12.00</los>
+        <los mergeMode='replace'>12.00</los>
     </unit>
     <!--
     <unit mergeMode='add' name="AbstractTitan">
