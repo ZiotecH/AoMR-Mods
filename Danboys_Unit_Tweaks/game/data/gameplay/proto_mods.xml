@@ -4,12 +4,12 @@
         <armor mergeMode='replace' type="crush" value="0.85"/>
         <protoaction>
             <name>RangedAttack</name>
-            <damage         mergeMode='replace' type="Pierce">4.000000</damage>
-            <damage         mergeMode='add'     type="Crush">8.000000</damage>
+            <damage         mergeMode='replace' type="Pierce">6.000000</damage>
+            <damage         mergeMode='add'     type="Crush">4.000000</damage>
             <damagebonus    mergeMode='replace' type="Building">1.000000</damagebonus>
             <damagebonus    mergeMode='add' type="AbstractFortress">2.000000</damagebonus>
             <damagebonus    mergeMode='add' type="AbstractTower">2.000000</damagebonus>
-            <damagebonus    mergeMode='add' type="AbstractWall">2.000000</damagebonus>
+            <!-- <damagebonus    mergeMode='add' type="AbstractWall">2.000000</damagebonus> -->
             <damagebonus    mergeMode='add' type="Unit">0.500000</damagebonus>
         </protoaction>
     </unit>
@@ -31,6 +31,7 @@
         <train mergeMode='add' row="0" column="5">Obelisk</train>
         <unittype mergeMode='add'>LogicalTypeHealed</unittype>
         <flag mergeMode='remove'>ExcludeFromMoveAllMilitary</flag>
+        <unitregen mergeMode='add'>1.0000</unitregen>
         <protoaction mergeMode='add'>
             <name>Build</name>
             <rate type="Obelisk">2.000000</rate>
@@ -346,6 +347,7 @@
         <maxvelocity mergeMode='replace'>7.00</maxvelocity>
         <los mergeMode='replace'>12.00</los>
     </unit>
+    <!-- ATLANTIS -->
     <!--
     <unit mergeMode='add' name="AbstractTitan">
         <unittype mergeMode='add'>LogicalTypeHealed</unittype>
@@ -363,4 +365,16 @@
         </protoaction>
     </unit>
     -->
+    <!-- RELIC/POWER-RELATED UNITS-->
+    <unit name="TartarianSpawn">
+        <protoaction>
+            <name>HandAttack</name>
+            <damagebonus mergeMode='add' type="AbstractVillager">0.100000</damagebonus>
+            <damagebonus mergeMode='add' type="AbstractTownCenter">0.100000</damagebonus>
+        </protoaction>
+        <protoaction>
+            <name>JumpAttack</name>
+            <damagebonus mergeMode='add' type="AbstractVillager">0.100000</damagebonus>
+        </protoaction>
+    </unit>
 </proto>

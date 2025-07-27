@@ -1,0 +1,9 @@
+<tactics>
+    <action>
+        <name stringid="STR_ACTION_AUTO_GATHER">AutoGather</name>
+        <type>AutoGather</type>
+        <addresourcestoinventory>1</addresourcestoinventory>
+        <persistent>1</persistent>
+    </action>
+    <tactic>Default<action>AutoGather</action></tactic>
+</tactics>

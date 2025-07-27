@@ -92,6 +92,19 @@
             <includeally>1</includeally>
         </protoaction>
     </unit>
+    <!-- TOWN CENTERS -->
+    <unit name="TownCenter">
+        <protoaction>
+            <name>RangedAttack</name>
+            <damagebonus mergeMode='add' type="TartarianSpawn">2.500000</damagebonus>
+        </protoaction>
+    </unit>
+    <unit name="CitadelCenter">
+        <protoaction>
+            <name>RangedAttack</name>
+            <damagebonus mergeMode='add' type="TartarianSpawn">2.500000</damagebonus>
+        </protoaction>
+    </unit>
     <!-- Towers -->
     <unit name="SentryTower">
         <buildlimit mergeMode='remove'/>
@@ -108,6 +121,10 @@
             <displayednumberprojectiles>2</displayednumberprojectiles>
             <autoretarget>1</autoretarget>
             <canattackground>1</canattackground>
+        </protoaction>
+        <protoaction>
+            <name>HandAttack</name>
+            <maxrange mergeMode='replace'>1.00</maxrange>
         </protoaction>
     </unit>
     <unit name="MirrorTower">
@@ -128,36 +145,36 @@
 		<initialhitpoints mergeMode='replace'>1200.0000</initialhitpoints>
 		<maxhitpoints mergeMode='replace'>1200.0000</maxhitpoints>
 		<armor mergeMode='replace' type="Hack" value="0.9500"></armor>
-		<armor mergeMode='replace' type="Pierce" value="0.9500"></armor>
-		<armor mergeMode='replace' type="Crush" value="0.1500"></armor>
+		<armor mergeMode='replace' type="Pierce" value="0.9900"></armor>
+		<armor mergeMode='replace' type="Crush" value="0.8000"></armor>
     </unit>
     <unit name="WallMedium">
 		<initialhitpoints mergeMode='replace'>1200.0000</initialhitpoints>
 		<maxhitpoints mergeMode='replace'>1200.0000</maxhitpoints>
 		<armor mergeMode='replace' type="Hack" value="0.9500"></armor>
-		<armor mergeMode='replace' type="Pierce" value="0.9500"></armor>
-		<armor mergeMode='replace' type="Crush" value="0.1500"></armor>
+		<armor mergeMode='replace' type="Pierce" value="0.9900"></armor>
+		<armor mergeMode='replace' type="Crush" value="0.8000"></armor>
     </unit>
     <unit name="WallLong">
 		<initialhitpoints mergeMode='replace'>1200.0000</initialhitpoints>
 		<maxhitpoints mergeMode='replace'>1200.0000</maxhitpoints>
 		<armor mergeMode='replace' type="Hack" value="0.9500"></armor>
-		<armor mergeMode='replace' type="Pierce" value="0.9500"></armor>
-		<armor mergeMode='replace' type="Crush" value="0.1500"></armor>
+		<armor mergeMode='replace' type="Pierce" value="0.9900"></armor>
+		<armor mergeMode='replace' type="Crush" value="0.8000"></armor>
     </unit>
     <unit name="WallConnector">
 		<initialhitpoints mergeMode='replace'>1200.0000</initialhitpoints>
 		<maxhitpoints mergeMode='replace'>1200.0000</maxhitpoints>
 		<armor mergeMode='replace' type="Hack" value="0.9500"></armor>
-		<armor mergeMode='replace' type="Pierce" value="0.9500"></armor>
-		<armor mergeMode='replace' type="Crush" value="0.1500"></armor>
+		<armor mergeMode='replace' type="Pierce" value="0.9900"></armor>
+		<armor mergeMode='replace' type="Crush" value="0.8000"></armor>
     </unit>
     <unit name="WallGate">
 		<initialhitpoints mergeMode='replace'>1200.0000</initialhitpoints>
 		<maxhitpoints mergeMode='replace'>1200.0000</maxhitpoints>
 		<armor mergeMode='replace' type="Hack" value="0.9500"></armor>
-		<armor mergeMode='replace' type="Pierce" value="0.9500"></armor>
-		<armor mergeMode='replace' type="Crush" value="0.1500"></armor>
+		<armor mergeMode='replace' type="Pierce" value="0.9900"></armor>
+		<armor mergeMode='replace' type="Crush" value="0.8000"></armor>
     </unit>
     <!-- Houtu's Wall -->
     <unit name="EarthWall">
@@ -165,9 +182,9 @@
 		<maxhitpoints mergeMode='replace'>1200.0000</maxhitpoints>
 		<unitregen mergeMode='add'>3.0000</unitregen>
 		<buildpoints mergeMode='replace'>120.0000</buildpoints>
-		<armor mergeMode='replace' type="Hack" value="0.9900"></armor>
+		<armor mergeMode='replace' type="Hack" value="0.9500"></armor>
 		<armor mergeMode='replace' type="Pierce" value="0.9900"></armor>
-		<armor mergeMode='replace' type="Crush" value="0.1500"></armor>
+		<armor mergeMode='replace' type="Crush" value="0.8000"></armor>
 		<tech mergeMode='add' row="0" column="0">StoneWall</tech>
 		<tech mergeMode='add' row="0" column="0">FortifiedWall</tech>
 		<tech mergeMode='add' row="0" column="0">CitadelWall</tech>

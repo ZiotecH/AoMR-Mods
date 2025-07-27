@@ -9,6 +9,7 @@ xs.vsix
 complete.md
 AoMR.7z
 MythLog.txt
+MythSessionData.txt
 
 #UNignore relevant items
 !Danboys_**

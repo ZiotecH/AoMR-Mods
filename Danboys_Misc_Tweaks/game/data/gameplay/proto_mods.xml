@@ -1,13 +1,12 @@
 <proto>
     <unit name="BerryBush" spatialmapped="true">
         <carrycapacity mergeMode='replace' resourcetype="Food">250.0000</carrycapacity>
-        <!-- <tactics mergeMode='add'>BerryBush.tactics</tactics> -->
+        <tactics mergeMode='add'>autogather.tactics</tactics>
         <flag mergeMode='remove'>DieAtZeroResources</flag>
-        <tactics mergeMode='add'>BerryBush.tactics</tactics>
         <protoaction mergeMode='add'>
-            <name>AutoGatherFood</name>
+            <name>AutoGather</name>
             <type>AutoGather</type>
-            <rate type="Food">0.250000</rate>
+            <rate type="Food">0.150000</rate>
             <addresourcestoinventory>1</addresourcestoinventory>
             <persistent>1</persistent>
             <active>1</active>

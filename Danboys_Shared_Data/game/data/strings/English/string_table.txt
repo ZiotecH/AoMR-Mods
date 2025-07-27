@@ -1,0 +1,8 @@
+Language = "English"
+IsRtl = "False"
+
+ID = "STR_EMB_DOMESTICPIG_NAME"   ;   Str = "Domesticated Pig"
+ID = "STR_EMB_DOMESTICPIG_LR"   ;   Str = "Villagers can gather Food from livestock animals."
+ID = "STR_CHARACTER_DOMESTICPIG"   ;   Str = "Pig"
+ID = "STR_PORTRAIT_DOMESTICPIG"   ;  Str = "nature\animals\land\pig_icon.png"
+ID = "STR_HISTORY_UNITS_DOMESTICPIG"   ;   Str = "Scientific name -- Sus scrofa\nSize -- Up to 500 lbs.\nDiet -- omnivorous on roots, fruit and seeds, but also small vertebrates and invertebrates\n\nDomestic pigs were bred from the wild boar in ancient Mesopotamia. Like goats, pigs were popular and common in agricultural societies because they can forage on their own and are not picky about their diets. Pigs, in fact, may be more cosmopolitan than goats since they can eat meat, spoiled food, and otherwise act as garbage disposals. Some ancient societies had prohibitions against eating pigs, which may be related to trichinosis and other diseases that come from pork. Herodotus indicates that at least upper-class Egyptians considered pork to be unclean. Nevertheless, there is ample evidence that even in ancient Egypt, pig farming was a major industry. Inscriptions indicate that the mayor of el-Kab owned a herd of 1,500 pigs, and the temples at Memphis and Abydos kept large herds of swine on their premises."

@@ -17,6 +17,12 @@
             <effect mergeMode='add' type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
                 <target type="ProtoUnit">AbstractFortress</target>
             </effect>
+            <effect mergeMode='add' type="Data" action="RangedAttack" subtype="Damage" amount="2.0" damagetype="Pierce" relativity="Absolute">
+                <target type="ProtoUnit">Sentinel</target>
+            </effect>
+            <effect mergeMode='add' type="Data" allactions="1" amount="0.25" subtype="Damagebonus" unittype="HumanSoldier" relativity="Absolute">
+                <target type="ProtoUnit">Sentinel</target>
+            </effect>
 		</effects>
 	</tech>
 	<tech name="HeroicAgeGeneral">
@@ -24,6 +30,9 @@
 			<effect mergeMode='add' type="Data" action="RangedAttack" subtype="Damage" amount="2.0" damagetype="Pierce" relativity="Absolute">
 				<target type="ProtoUnit">AbstractTower</target>
 			</effect>
+            <effect mergeMode='add' type="Data" action="RangedAttack" subtype="Damage" amount="2.0" damagetype="Pierce" relativity="Absolute">
+                <target type="ProtoUnit">Sentinel</target>
+            </effect>
 			<effect mergeMode='add' type="Data" action="RangedAttack" subtype="Damage" amount="3.5" damagetype="Pierce" relativity="Absolute">
 				<target type="ProtoUnit">AbstractFortress</target>
 			</effect>
@@ -33,11 +42,17 @@
 			<effect mergeMode='add' type="Data" allactions="1" amount="0.25" subtype="Damagebonus" unittype="HumanSoldier" relativity="Absolute">
         		<target type="ProtoUnit">AbstractFortress</target>
       		</effect>
+            <effect mergeMode='add' type="Data" allactions="1" amount="0.25" subtype="Damagebonus" unittype="HumanSoldier" relativity="Absolute">
+                <target type="ProtoUnit">Sentinel</target>
+            </effect>
             <effect mergeMode='add' type="Data" action="RangedAttack" amount="1.00" subtype="MaximumRange" relativity="Absolute">
                 <target type="ProtoUnit">AbstractFortress</target>
             </effect>
             <effect mergeMode='add' type="Data" action="RangedAttack" amount="0.50" subtype="MaximumRange" relativity="Absolute">
                 <target type="ProtoUnit">AbstractTower</target>
+            </effect>
+            <effect mergeMode='add' type="Data" action="RangedAttack" amount="0.50" subtype="MaximumRange" relativity="Absolute">
+                <target type="ProtoUnit">Sentinel</target>
             </effect>
 		</effects>
 	</tech>
@@ -61,6 +76,26 @@
             <effect mergeMode='add' type="Data" action="RangedAttack" amount="0.50" subtype="MaximumRange" relativity="Absolute">
                 <target type="ProtoUnit">AbstractTower</target>
             </effect>
+            <effect mergeMode='add' type="Data" action="RangedAttack" subtype="Damage" amount="2.0" damagetype="Pierce" relativity="Absolute">
+                <target type="ProtoUnit">Sentinel</target>
+            </effect>
+            <effect mergeMode='add' type="Data" allactions="1" amount="0.25" subtype="Damagebonus" unittype="HumanSoldier" relativity="Absolute">
+                <target type="ProtoUnit">Sentinel</target>
+            </effect>
+            <effect mergeMode='add' type="Data" action="RangedAttack" amount="0.50" subtype="MaximumRange" relativity="Absolute">
+                <target type="ProtoUnit">Sentinel</target>
+            </effect>
+            <effect mergeMode='add' type="Data" amount="0.25" subtype="UnitRegenRate" relativity="Absolute">
+                <target type="ProtoUnit">AbstractWall</target>
+            </effect>
+            <effect mergeMode='add' type="Data" amount="0.25" subtype="UnitRegenRate"
+                relativity="Absolute">
+                <target type="ProtoUnit">AbstractTower</target>
+            </effect>
+            <effect mergeMode='add' type="Data" amount="0.25" subtype="UnitRegenRate"
+                relativity="Absolute">
+                <target type="ProtoUnit">AbstractFortress</target>
+            </effect>
 		</effects>
 	</tech>
 	<tech name="WonderAgeGeneral">
@@ -79,136 +114,269 @@
       		</effect>
 		</effects>
 	</tech>
-	<!-- Wall Techs -->
+    <!-- Wall Techs -->
 	<tech name="StoneWall">
 		<effects>
-			<effect mergeMode='replace' type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+            <effect mergeMode='remove' type="Data" amount="2.00" subtype="Hitpoints" relativity="BasePercent">
+                <target type="ProtoUnit">AbstractWall</target>
+            </effect>
+            <effect mergeMode='remove' type="Data" amount="7" subtype="LOS" relativity="Absolute">
+                <target type="ProtoUnit">AbstractWall</target>
+            </effect>
+            <effect mergeMode='add' type="Data" amount="2" subtype="LOS" relativity="Absolute">
+                <target type="ProtoUnit">AbstractWall</target>
+            </effect>
+            <effect mergeMode='remove' type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent">
+                <target type="ProtoUnit">AbstractWall</target>
+            </effect>
+			<effect mergeMode='add' type="Data" amount="1.15" subtype="Hitpoints" relativity="BasePercent">
+                <target type="ProtoUnit">AbstractWall</target>
+            </effect>
+            <!--
+            <effect mergeMode='add' type="Data" subtype="SetProtoArmor" damagetype="Hack" amount="0.95" relativity="Assign">
+                <target type="ProtoUnit">AbstractWall</target>
+            </effect>
+            <effect mergeMode='add' type="Data" amount="0.10" subtype="Armor" armortype="Crush"
+                relativity="Absolute">
+                <target type="ProtoUnit">AbstractWall</target>
+            </effect>
+            <effect mergeMode='add' type="Data" amount="0.05" subtype="Armor" armortype="Hack"
+                relativity="Absolute">
+                <target type="ProtoUnit">AbstractWall</target>
+            </effect>
+            <effect mergeMode='add' type="Data" amount="0.05" subtype="Armor" armortype="Pierce"
+                relativity="Absolute">
+                <target type="ProtoUnit">AbstractWall</target>
+            </effect>
+            -->
+            <!--
+            <effect mergeMode='add' type="Data" amount="-0.50" subtype="ArmorVulnerability" armortype="Pierce" relativity="BasePercent">
 				<target type="ProtoUnit">AbstractWall</target>
 			</effect>
-			<effect mergeMode='add' type="Data" amount="-0.95" subtype="ArmorVulnerability" armortype="Hack" relativity="Assign">
-				<target type="ProtoUnit">AbstractWall</target>
-			</effect>
-			<effect mergeMode='add' type="Data" amount="-0.95" subtype="ArmorVulnerability" armortype="Pierce" relativity="Assign">
-				<target type="ProtoUnit">AbstractWall</target>
-			</effect>
-			<effect mergeMode='add' type="Data" amount="-0.25" subtype="ArmorVulnerability" armortype="Crush" relativity="Assign">
-				<target type="ProtoUnit">AbstractWall</target>
-			</effect>
+            <effect mergeMode='add' type="Data" amount="-0.50" subtype="ArmorVulnerability" armortype="Hack" relativity="BasePercent">
+                <target type="ProtoUnit">AbstractWall</target>
+            </effect>
+            <effect mergeMode='add' type="Data" amount="-0.10" subtype="ArmorVulnerability" armortype="Crush" relativity="BasePercent">
+                <target type="ProtoUnit">AbstractWall</target>
+            </effect>
+            -->
 		</effects>
 	</tech>
 	<tech name="FortifiedWall">
 		<effects>
-			<effect mergeMode='replace' type="Data" amount="1.30" subtype="Hitpoints" relativity="BasePercent">
+            <effect mergeMode='remove' type="Data" amount="2.00" subtype="Hitpoints" relativity="BasePercent">
+                <target type="ProtoUnit">AbstractWall</target>
+            </effect>
+			<effect mergeMode='add' type="Data" amount="1.45" subtype="Hitpoints" relativity="BasePercent">
 				<target type="ProtoUnit">AbstractWall</target>
 			</effect>
-			<effect mergeMode='add' type="Data" amount="-0.01" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent">
+            <!--
+            <effect mergeMode='add' type="Data" amount="-0.40" subtype="ArmorVulnerability" armortype="Hack" relativity="BasePercent">
 				<target type="ProtoUnit">AbstractWall</target>
 			</effect>
-			<effect mergeMode='add' type="Data" amount="-0.01" subtype="ArmorVulnerability" armortype="Pierce" relativity="Percent">
+			<effect mergeMode='add' type="Data" amount="-0.40" subtype="ArmorVulnerability" armortype="Pierce" relativity="BasePercent">
 				<target type="ProtoUnit">AbstractWall</target>
 			</effect>
-			<effect mergeMode='add' type="Data" amount="-0.05" subtype="ArmorVulnerability" armortype="Crush" relativity="Percent">
+			<effect mergeMode='add' type="Data" amount="-0.075" subtype="ArmorVulnerability" armortype="Crush" relativity="BasePercent">
 				<target type="ProtoUnit">AbstractWall</target>
 			</effect>
+            -->
 		</effects>
 	</tech>
 	<tech name="BronzeWall">
 		<effects>
-			<effect mergeMode='replace' type="Data" amount="1.30" subtype="Hitpoints" relativity="BasePercent">
+            <effect mergeMode='remove' type="Data" amount="2.00" subtype="Hitpoints" relativity="BasePercent">
+                <target type="ProtoUnit">AbstractWall</target>
+            </effect>
+			<effect mergeMode='add' type="Data" amount="1.45" subtype="Hitpoints" relativity="BasePercent">
 				<target type="ProtoUnit">AbstractWall</target>
 			</effect>
-			<effect mergeMode='add' type="Data" amount="-0.01" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent">
-				<target type="ProtoUnit">AbstractWall</target>
-			</effect>
-			<effect mergeMode='add' type="Data" amount="-0.01" subtype="ArmorVulnerability" armortype="Pierce" relativity="Percent">
-				<target type="ProtoUnit">AbstractWall</target>
-			</effect>
-			<effect mergeMode='add' type="Data" amount="-0.05" subtype="ArmorVulnerability" armortype="Crush" relativity="Percent">
-				<target type="ProtoUnit">AbstractWall</target>
-			</effect>
+            <!-- <effect mergeMode='add' type="Data" amount="-0.05" subtype="ArmorVulnerability" armortype="Crush" relativity="BasePercent">
+                <target type="ProtoUnit">AbstractWall</target>
+            </effect>
+            <effect mergeMode='add' type="Data" amount="0.05" subtype="Armor" armortype="Crush"
+            relativity="Absolute">
+                <target type="ProtoUnit">AbstractWall</target>
+            </effect>
+            -->
 		</effects>
 	</tech>
 	<tech name="IronWall">
 		<effects>
-			<effect mergeMode='replace' type="Data" amount="1.30" subtype="Hitpoints" relativity="BasePercent">
+            <effect mergeMode='remove' type="Data" amount="2.00" subtype="Hitpoints" relativity="BasePercent">
+                <target type="ProtoUnit">AbstractWall</target>
+            </effect>
+			<effect mergeMode='add' type="Data" amount="1.45" subtype="Hitpoints" relativity="BasePercent">
 				<target type="ProtoUnit">AbstractWall</target>
 			</effect>
-			<effect mergeMode='add' type="Data" amount="-0.01" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent">
+            <!-- <effect mergeMode='add' type="Data" amount="-0.05" subtype="ArmorVulnerability" armortype="Crush" relativity="BasePercent">
 				<target type="ProtoUnit">AbstractWall</target>
-			</effect>
-			<effect mergeMode='add' type="Data" amount="-0.01" subtype="ArmorVulnerability" armortype="Pierce" relativity="Percent">
-				<target type="ProtoUnit">AbstractWall</target>
-			</effect>
-			<effect mergeMode='add' type="Data" amount="-0.05" subtype="ArmorVulnerability" armortype="Crush" relativity="Percent">
-				<target type="ProtoUnit">AbstractWall</target>
-			</effect>
+			</effect> 
+            <effect mergeMode='add' type="Data" amount="0.05" subtype="Armor" armortype="Crush"
+                relativity="Absolute">
+                <target type="ProtoUnit">AbstractWall</target>
+            </effect>
+            -->
 		</effects>
 	</tech>
 	<tech name="OrichalcumWall">
 		<effects>
-		  	<effect mergeMode='replace' type="Data" amount="1.30" subtype="Hitpoints" relativity="BasePercent">
+            <effect mergeMode='remove' type="Data" amount="2.00" subtype="Hitpoints" relativity="BasePercent">
+                <target type="ProtoUnit">AbstractWall</target>
+            </effect>
+		  	<effect mergeMode='add' type="Data" amount="1.45" subtype="Hitpoints" relativity="BasePercent">
 				<target type="ProtoUnit">AbstractWall</target>
 		  	</effect>
-			<effect mergeMode='add' type="Data" amount="-0.01" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent">
+            <!-- <effect mergeMode='add' type="Data" amount="-0.05" subtype="ArmorVulnerability" armortype="Crush" relativity="BasePercent">
 				<target type="ProtoUnit">AbstractWall</target>
-			</effect>
-			<effect mergeMode='add' type="Data" amount="-0.01" subtype="ArmorVulnerability" armortype="Pierce" relativity="Percent">
-				<target type="ProtoUnit">AbstractWall</target>
-			</effect>
-			<effect mergeMode='add' type="Data" amount="-0.05" subtype="ArmorVulnerability" armortype="Crush" relativity="Percent">
-				<target type="ProtoUnit">AbstractWall</target>
-			</effect>
+			</effect> 
+            <effect mergeMode='add' type="Data" amount="0.05" subtype="Armor" armortype="Crush"
+                relativity="Absolute">
+                <target type="ProtoUnit">AbstractWall</target>
+            </effect>
+            -->
 		</effects>
 	</tech>
 	<tech name="GreatWall" orderhint="0">
 		<effects>
-		  	<effect mergeMode='replace' type="Data" amount="1.30" subtype="Hitpoints" relativity="BasePercent">
+            <effect mergeMode='remove' type="Data" amount="2.00" subtype="Hitpoints" relativity="BasePercent">
+                <target type="ProtoUnit">AbstractWall</target>
+            </effect>
+		  	<effect mergeMode='add' type="Data" amount="1.45" subtype="Hitpoints" relativity="BasePercent">
 				<target type="ProtoUnit">AbstractWall</target>
 		  	</effect>
-			<effect mergeMode='add' type="Data" amount="-0.01" subtype="ArmorVulnerability" armortype="Hack" relativity="Percent">
+            <!-- <effect mergeMode='add' type="Data" amount="-0.05" subtype="ArmorVulnerability" armortype="Crush" relativity="BasePercent">
 				<target type="ProtoUnit">AbstractWall</target>
-			</effect>
-			<effect mergeMode='add' type="Data" amount="-0.01" subtype="ArmorVulnerability" armortype="Pierce" relativity="Percent">
-				<target type="ProtoUnit">AbstractWall</target>
-			</effect>
-			<effect mergeMode='add' type="Data" amount="-0.05" subtype="ArmorVulnerability" armortype="Crush" relativity="Percent">
-				<target type="ProtoUnit">AbstractWall</target>
-			</effect>
+			</effect> 
+            <effect mergeMode='add' type="Data" amount="0.05" subtype="Armor" armortype="Crush"
+                relativity="Absolute">
+                <target type="ProtoUnit">AbstractWall</target>
+            </effect>
+            -->
 		</effects>
 	</tech>
+    <!-- Tower Techs -->
+    <tech name="WatchTower">
+        <effects>
+            <effect mergeMode='add' type="Data" amount="-0.25" subtype="ArmorVulnerability" armortype="Hack" relativity="BasePercent">
+                <target type="ProtoUnit">AbstractTower</target>
+            </effect>
+            <effect mergeMode='add' type="Data" amount="-0.25" subtype="ArmorVulnerability" armortype="Hack" relativity="BasePercent">
+                <target type="ProtoUnit">Sentinel</target>
+            </effect>
+        </effects>
+    </tech>
+    <tech name="GuardTower">
+        <effects>
+            <effect mergeMode='add' type="Data" allactions="1" amount="1.50" subtype="Damage" relativity="BasePercent">
+                <target type="ProtoUnit">Sentinel</target>
+            </effect>
+            <effect mergeMode='remove' type="Data" allactions="1" amount="1.50" subtype="Damage" relativity="BasePercent">
+                <target type="ProtoUnit">SentryTower</target>
+            </effect>
+            <effect mergeMode='add' type="Data" allactions="1" amount="1.50" subtype="Damage" relativity="BasePercent">
+                <target type="ProtoUnit">AbstractTower</target>
+            </effect>
+            <effect mergeMode='add' type="Data" amount="-0.25" subtype="ArmorVulnerability" armortype="Hack" relativity="BasePercent">
+                <target type="ProtoUnit">AbstractTower</target>
+            </effect>
+            <effect mergeMode='add' type="Data" amount="-0.25" subtype="ArmorVulnerability" armortype="Hack" relativity="BasePercent">
+                <target type="ProtoUnit">Sentinel</target>
+            </effect>
+            <effect mergeMode='add' type="Data" amount="-0.20" subtype="ArmorVulnerability" armortype="Pierce" relativity="BasePercent">
+                <target type="ProtoUnit">AbstractTower</target>
+            </effect>
+            <effect mergeMode='add' type="Data" amount="-0.20" subtype="ArmorVulnerability" armortype="Pierce" relativity="BasePercent">
+                <target type="ProtoUnit">Sentinel</target>
+            </effect>
+            <effect mergeMode='add' type="Data" amount="-0.20" subtype="ArmorVulnerability" armortype="Crush" relativity="BasePercent">
+                <target type="ProtoUnit">AbstractFortress</target>
+            </effect>
+            <effect mergeMode='add' type="Data" amount="-0.35" subtype="ArmorVulnerability" armortype="Hack" relativity="BasePercent">
+                <target type="ProtoUnit">AbstractFortress</target>
+            </effect>
+            <effect mergeMode='add' type="Data" amount="-0.35" subtype="ArmorVulnerability" armortype="Pierce" relativity="BasePercent">
+                <target type="ProtoUnit">AbstractFortress</target>
+            </effect>
+        </effects>
+    </tech>
+    <tech name="BoilingOil">
+        <effects>
+            <effect mergeMode='add' type="Data" action="RangedAttack" amount="1.00"
+                subtype="MinimumRange" relativity="Assign">
+                <target type="ProtoUnit">AbstractTower</target>
+            </effect>
+            <effect mergeMode='add' type="Data" action="RangedAttack" amount="1.00"
+                subtype="MinimumRange" relativity="Assign">
+                <target type="ProtoUnit">AbstractFortress</target>
+            </effect>
+            <effect mergeMode='add' type="Data" action="HandAttack" amount="1.00"
+                subtype="MaximumRange" relativity="Assign">
+                <target type="ProtoUnit">AbstractFortress</target>
+            </effect>
+        </effects>
+    </tech>
+    <tech name="Crenellations">
+        <effects>
+            <effect mergeMode='add' type="Data" action="RangedAttack" amount="2.0" subtype="MaximumRange" relativity="Absolute">
+                <target type="ProtoUnit">Sentinel</target>
+            </effect>
+            <effect mergeMode='add' type="Data" action="RangedAttack" amount="99.0"
+                subtype="Trackrating" relativity="Assign">
+                <target type="ProtoUnit">Sentinel</target>
+            </effect>
+        </effects>
+    </tech>
+    <!-- Eco Techs -->
     <tech name="Husbandry">
         <effects>
-            <effect mergeMode='add' type="Data" action="AutoGatherFood" amount="0.10" subtype="WorkRate" unittype="Food" relativity="Assign">
-                <target type="ProtoUnit">Pig</target>
-            </effect>
-            <effect mergeMode='add' type="Data" action="AutoGatherFood" amount="2.0" subtype="WorkRate" unittype="Food" relativity="Percent">
-                <target type="ProtoUnit">Pig</target>
-            </effect>
             <effect mergeMode='add' type="Data" amount="1.0" subtype="Enable" relativity="Absolute">
                 <target type="ProtoUnit">Pig</target>
             </effect>
-            <effect mergeMode='add' Type="Data" amount="0.00" subtype="ProtoUnitFlag" flag="Wanders" relativity="Assign">
+            <effect mergeMode='add' type="Data" action="AutoGatherFood" amount="0.25"
+                subtype="WorkRate" unittype="Food" relativity="Assign">
                 <target type="ProtoUnit">Pig</target>
             </effect>
-            <effect mergeMode='add' Type="Data" amount="0.00" subtype="ProtoUnitFlag" flag="NotDeleteable" relativity="Assign">
+            <!--
+            <effect mergeMode='add' type="Data" action="AutoGatherFood" amount="2.0" subtype="WorkRate"
+            unittype="Food" relativity="Percent">
                 <target type="ProtoUnit">Pig</target>
             </effect>
-            <effect mergeMode='add' Type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="NonConvertableHerdable" relativity="Assign">
+            -->
+            <effect mergeMode='add' Type="Data" amount="0.00" subtype="ProtoUnitFlag" flag="Wanders"
+                relativity="Assign">
                 <target type="ProtoUnit">Pig</target>
             </effect>
-            <effect mergeMode='add' Type="Data" amount="1.00" subtype="ProtoActionRemove" protoaction="AutoConvert" relativity="Assign">
+            <effect mergeMode='add' Type="Data" amount="0.00" subtype="ProtoUnitFlag"
+                flag="NotDeleteable" relativity="Assign">
                 <target type="ProtoUnit">Pig</target>
             </effect>
-            <effect mergeMode='add' type="Data" amount="1.00" subtype="CommandAdd" proto="Delete" row="3" column="5" relativity="Assign">
+            <effect mergeMode='add' Type="Data" amount="1.00" subtype="ProtoUnitFlag"
+                flag="NonConvertableHerdable" relativity="Assign">
                 <target type="ProtoUnit">Pig</target>
             </effect>
-            <effect mergeMode='add' type="Data" amount="250.00" subtype="CarryCapacity" resource="Food" relativity="Assign">
+            <effect mergeMode='add' Type="Data" amount="1.00" subtype="ProtoActionRemove"
+                protoaction="AutoConvert" relativity="Assign">
                 <target type="ProtoUnit">Pig</target>
             </effect>
-            <effect mergeMode='add' type="Data" amount="25.00" subtype="Hitpoints" relativity="Assign">
+            <effect mergeMode='add' type="Data" amount="1.00" subtype="CommandAdd" proto="Delete"
+                row="3" column="5" relativity="Assign">
                 <target type="ProtoUnit">Pig</target>
             </effect>
-            <effect mergeMode='add' type="Data" amount="5.00" subtype="BuildLimit" relativity="Assign">
+            <effect mergeMode='add' type="Data" amount="250.00" subtype="CarryCapacity"
+                resource="Food" relativity="Assign">
+                <target type="ProtoUnit">Pig</target>
+            </effect>
+            <effect mergeMode='add' type="Data" amount="25.00" subtype="Hitpoints"
+                relativity="Assign">
+                <target type="ProtoUnit">Pig</target>
+            </effect>
+            <effect mergeMode='add' type="Data" amount="5.00" subtype="BuildLimit"
+                relativity="Assign">
+                <target type="ProtoUnit">Pig</target>
+            </effect>
+            <effect mergeMode='add' type="Data" action="AutoConvert" amount="0.0"
+                subtype="ActionEnable" relativity="Assign">
                 <target type="ProtoUnit">Pig</target>
             </effect>
         </effects>

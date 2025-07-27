@@ -723,9 +723,28 @@
 		<flag>YPForceUnapply</flag>
 		<flag>NoTextMessage</flag>
 		<effects>
-			<effect mergeMode='replace' type="Data" amount="1.40" subtype="Hitpoints" relativity="BasePercent">
+			<effect mergeMode='replace' type="Data" amount="1.40" subtype="Hitpoints" relativity="Percent">
 				<target type="ProtoUnit">AbstractWall</target>
 			</effect>
+            <effect mergeMode='add' type="Data" amount="1.15" subtype="Hitpoints" relativity="Percent">
+                <target type="ProtoUnit">AbstractTower</target>
+            </effect>
+            <effect mergeMode='add' type="Data" amount="1.15" subtype="Hitpoints" relativity="Percent">
+                <target type="ProtoUnit">AbstractFortress</target>
+            </effect>
+            <effect mergeMode='add' type="Data" amount="1.15" subtype="Hitpoints" relativity="Percent">
+                <target type="ProtoUnit">Sentinel</target>
+            </effect>
+            <!-- <effect mergeMode='add' type="Data" amount="-0.99" subtype="Armor" armortype="Hack" relativity="Assign">
+                <target type="ProtoUnit">AbstractWall</target>
+            </effect>
+            <effect mergeMode='add' type="Data" amount="-0.99" subtype="Armor" armortype="Pierce" relativity="Assign">
+                <target type="ProtoUnit">AbstractWall</target>
+            </effect>
+            <effect mergeMode='add' type="Data" amount="0.25" subtype="Armor" armortype="Crush" relativity="Absolute">
+                <target type="ProtoUnit">AbstractWall</target>
+            </effect>
+            -->
 			<effect type="TextOutput">STR_RLC_TECH_TROJAN_GATE_HINGE_SELF</effect>
 			<effect all="true" type="TextOutput">STR_RLC_TECH_TROJAN_GATE_HINGE_OTHER</effect>
 		</effects>
@@ -1161,7 +1180,7 @@
 			<effect mergeMode='replace' type="Data" action="Autogather" amount="1.00" subtype="ActionEnable" relativity="Absolute">
 				<target type="ProtoUnit">AbstractTownCenter</target>
 			</effect>
-			<effect mergeMode='replace' type="Data" action="Autogather" amount="0.02" subtype="WorkRate" unittype="Favor" relativity="Absolute">
+			<effect mergeMode='replace' type="Data" action="Autogather" amount="0.05" subtype="WorkRate" unittype="Favor" relativity="Absolute">
 				<target type="ProtoUnit">AbstractTownCenter</target>
 			</effect>
 			<effect type="TextOutput">STR_RLC_TECH_RHEIAS_CROWN_SELF</effect>
